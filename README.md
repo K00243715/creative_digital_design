@@ -1,4 +1,4 @@
-w#creative_digital_media
+#creative_digital_media
 
 
 
@@ -10,10 +10,14 @@ MODULE:     E.W.T.
 
 
 
+
+
 DESCRIPTION:
 -The goal of this project is to launch a simple website without using a hosting package. For this assignment, we will use a simpler solution with Github, that launches a simple, static website pages for free.
 
 -Additionally, this assignment will test the ability to understand and effectively implement SEO techniques.
+
+
 
 
 
