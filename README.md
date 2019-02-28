@@ -22,6 +22,6 @@ DESCRIPTION:
 
 
 
-This website is currently under development and we greatly appreciate your patience and unserstanding during this time.
+This website is currently under development and we greatly appreciate your patience and understanding during this time.
 
 View live Demo: https://k00243715.github.io/creative_digital_design/
