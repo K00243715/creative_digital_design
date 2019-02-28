@@ -1,2 +1,2 @@
-# creative_digital_design_website
+# creative_digital_media
 Hiking Website
