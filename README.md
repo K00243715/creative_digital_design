@@ -1,6 +1,7 @@
 #creative_digital_media
 
 
+Name of website: 'Happy Trails'
 
 TYPE:       Hiking Website
 
