@@ -2,7 +2,7 @@
 
 
 TYPE:       Hiking Website - 
-ASSIGNMENT: SEO Project (30%)
+ASSIGNMENT: SEO Project (30%) -
 MODULE:     E.W.T.
 
 
