@@ -1,8 +1,10 @@
 #creative_digital_media
 
 
-TYPE:       Hiking Website - 
-ASSIGNMENT: SEO Project (30%) -
+TYPE:       Hiking Website
+
+ASSIGNMENT: SEO Project (30%)
+
 MODULE:     E.W.T.
 
 
