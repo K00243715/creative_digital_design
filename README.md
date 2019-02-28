@@ -1,4 +1,4 @@
-#creative_digital_media
+w#creative_digital_media
 
 
 
@@ -17,6 +17,6 @@ DESCRIPTION:
 
 
 
-This app is responsive enough to run on any device.
+This website is currently under development and we greatly appreciate your patience and unserstanding during this time.
 
-Live Demo: https://k00243715.github.io/creative_digital_design/
+View live Demo: https://k00243715.github.io/creative_digital_design/
