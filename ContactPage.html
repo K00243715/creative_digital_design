@@ -1,94 +1,115 @@
 <!DOCTYPE html>
 <html lang="en"> 
 
-    
     <head> 
 	    <meta charset="utf-8">
-        
-	    <title>Assignment 1 - Responsive Design - 50% - CMP - EWT</title>
+	    <title> Assignment 1 - Responsive Design - 50% - CMP - EWT</title>
         
         <!--reference on HTML page to CSS file-->
         <link rel="stylesheet" href="./css/styles.css">
-        
+                
         <!--tab favicon-->
         <link rel="icon" href="img/favicon.PNG">
-        </head>   
-     
-    
-<!--STYLE OF WEBSITE-->   
-<style>
+
+
+        </head>
+        
+        
+<!--STYLE OF WEBSITE-->         
+    <style>
+
 	   </style>
-  
  
+
 <!--BODY OF WEBSITE-->
-    <body>
-        <h2 id="top"></h2> 
+    <main>
+<body>
+        <h2 id="top"></h2>
+            
+<!--MESSAGE TO USER - BUTTON-->
+         <button onclick="myFunction()">HEY YOU! - PRESS ME FIRST!</button>
+        <script>
+            function myFunction() {
+            alert("Hi - this website is currently undergoing construction. Apologies for any frustration caused - we hope to fully complete everything, ASAP. Thanks for visiting!");
+            }
+        </script>
+        <br>
+        <br>
+        <br>
         <div id="wrapper">
             
 <!--LOGO-->
             <header>
                 
-                <h1>HAPPY TRAILS - IRELAND</h1>
-                
+            <h1>HAPPY HIKES - IRELAND</h1>
+                              
                 <a href="index.html">
                     
-                <img src="img/favicon.PNG" alt="logoFavicon" width="14.4%" height="77%">
+                <img src="img/favicon.PNG" alt="favicon" width="15.8%" height="77%">
                 <link rel="icon"></a>
-                        
+                
+              
+                
                 
 <!--Search Bar-->
+                <div class="search">
                         <form>
-                            <input type="text" placeholder="Search" name="search" ><button type="submit" ><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Search" name="search"><button type="submit" ><i class="fa fa-search"></i></button>
                             </form>
-                </header>  
-                              
+                        </div>
                 
-<!--Nav Bar-->                 
-    <nav>
-        <ul>
-            <li> <a href="index.html"> Home</a> </li>
-            <li ><a href="MyTrails.html">MyTrails</a> </li>
-            <li><a href="Gallery.html">Gallery</a> </li>
-            <li><a href="Links.html">Links</a> </li>
-            <li><a href="ContactPage.html" class="current">CONTACT</a> </li>
-        </ul>
-    </nav>
-             
-  
-
+                </header>
+                
+                
+  <!--Nav Bar-->                           
+        <nav>
+            <ul>
+                <li ><a href="index.html">Home</a> </li>
+                <li ><a href="MyTrails.html">MyTrails</a> </li>
+                <li><a href="Articles.html">Articles</a> </li>
+                <li><a href="Gallery.html">Gallery</a> </li>
+                <li> <a href="ContactPage.html" class="currentpage"> CONTACT</a> </li>
+            </ul>
+        </nav>
+                
     
 <!--<main>-->   
-
-<!--Main Pic-->
-    <main>
-    <div id="pagetitle">
-        <h2>Home</h2>    
-        </div>
-    
-    <div id="hero">
-            <img src="img/banner12.PNG" alt="banner" >
-        </div> 
-
-<!--QUOTE-->
-        <ul>
-            <strong><em>“If you think you've peaked, find a new mountain.”</em></strong>
-            </ul>
+<!--Main Pic-->  
+        <div id="pagetitle">
+            <h2>Contact</h2>    
+            </div>
+        <div id="hero">
+        <img src="img/contact.PNG"  alt="barrbday" style="width:1000px; height:400px;"></a>   
+            </div>
+  
             
-               
-        
-<!--TEXTS-->  
-<div class="toocol">
-         <form action="/cgi-bin/textcontrols.pl" method="post">
-             <h2>Enjoyed your visit?</h2>
+ <!--QUOTE-->   
+        <ul>
+            <em><strong>“You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.” -Walt Disney </strong></em><br><br>
+            </ul>
+           
+            
+        <div style="background-color:greenyellow;color:black;padding:20px;">      
+            <h2>GET IN TOUCH!</h2>
+           </div>
+        <br><br>
+      
+          
+<!-- FORM element-->
+            <div>
+            <form action="/cgi-bin/textcontrols.pl" method="post"> 
+          
             <fieldset>
               
-            <legend id="form">Give us your feedback </legend>
+             <p> Happy to leave a comment below...</p>  
               
-            <p><label>Town: <input type="text" name="town" value="Tell us where your from..." size="31" maxlength="50" id="town"></label></p> 
+            <legend id="form">Enjoyed your visit?</legend>
+              
+            <p><label>Info on location: <input type="text" name="town" value="Tell us where your from..." size="31" maxlength="50" id="town"></label></p> 
               
                         
              <p>
-            <label  for="name">Name:</label>
+            <label  for="name">Known as:</label>
 			<input type="text" name="name" id="name" value="Enter your name..." size="30" maxlength="10"> </p> 
               
                             
@@ -103,12 +124,15 @@
              
           </fieldset> 
         </form>
-        </div>
-        
+                </div>
+         
+     
+            </div>
+   
+            <br>
             
-           
-<!--Footer-->
-        <footer>
+ <!--Footer-->       
+   <footer>
         &copy; Copyright 2019 |<!--SOCIAL MEDIA LINKS-->
                     <a href="https://www.facebook.com/limerickclimbingclub/"><img src="img/FBIcon.PNG"></a>
                 
@@ -116,12 +140,14 @@
                 
                     <a href="https://en.wikipedia.org/wiki/List_of_long-distance_trails_in_the_Republic_of_Ireland"><img src="img/WikiIcon.PNG"></a>
                 
-                    <a href="https://twitter.com/irelandwalking?lang=en"><img src="img/TwiiterIcon.PNG"></a>| AMI
+                    <a href="https://twitter.com/irelandwalking?lang=en"><img src="img/TwiiterIcon.PNG"></a>| Ashley Nic an Airchinnigh
             
             </footer>
         
 <!--Internal Top of Page-->
-        <a href="#top">Back to top</a>
-        <
-    </body>
+        <a href="#top">Back to top</a>               
+            
+           
+  </body>  
+      </main>     
 </html>

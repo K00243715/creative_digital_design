@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en"> 
-
-    
-    <head> 
-	    <meta charset="utf-8">
-        
-	    <title>Assignment 1 - Responsive Design - 50% - CMP - EWT</title>
+    <head>
+        <title>Assignment 1 - Responsive Design - 50% - CMP - EWT</title>
         
         <!--reference on HTML page to CSS file-->
         <link rel="stylesheet" href="./css/styles.css">
         
         <!--tab favicon-->
         <link rel="icon" href="img/favicon.PNG">
-        </head>   
-     
+      </head>
     
 <!--STYLE OF WEBSITE-->   
 <style>
 	   </style>
-  
- 
+    
 <!--BODY OF WEBSITE-->
+    <main>
     <body>
-        <h2 id="top"></h2> 
+          <h2 id="top"></h2>
+        
+<!--MESSAGE TO USER - BUTTON-->
          <button onclick="myFunction()">HEY YOU! - PRESS ME FIRST!</button>
         <script>
             function myFunction() {
             alert("Hi - this website is currently undergoing construction. Apologies for any frustration caused - we hope to fully complete everything, ASAP. Thanks for visiting!");
             }
         </script>
+        <br>
+        <br>
+        <br>
         
-        <div id="wrapper">
-            
+            <div id="wrapper">
+        
 <!--LOGO-->
             <header>
                 
-                <h1>HAPPY TRAILS - IRELAND </h1>
-                
+                <h1>HAPPY HIKES - IRELAND </h1>
                 
                 <a href="index.html">
                     
@@ -45,36 +44,31 @@
                         
                 
 <!--Search Bar-->
-                        <form>
-                            <input type="text" placeholder="Search" name="search" ><button type="submit" ><i class="fa fa-search"></i></button>
-                            </form>
-
-                </header>  
-                              
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Search" name="search"><button type="submit" ><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                </header>
+                
                 
 <!--Nav Bar-->                 
     <nav>
         <ul>
             <li> <a href="index.html"  class="current"> HOME</a> </li>
             <li ><a href="MyTrails.html">MyTrails</a> </li>
+            <li><a href="Articles.html">Articles</a> </li>
             <li><a href="Gallery.html">Gallery</a> </li>
-            <li><a href="Links.html">Links</a> </li>
             <li><a href="ContactPage.html">Contact</a> </li>
         </ul>
     </nav>
-             
-  
-
-    
-<!--<main>-->   
-
-<!--Main Pic-->
-    <main>
-    <div id="pagetitle">
-        <h2>Home</h2>    
+                
+         
+        <div id="pagetitle">
+        <h1>Home</h1>    
         </div>
-    
-    <div id="hero">
+            
+            <div id="hero">
             <img src="img/banner.PNG" alt="banner" >
         </div> 
 
@@ -83,135 +77,150 @@
             <strong><em>“You need special shoes for hiking—and a bit of a special soul as well.”</em></strong>
             
             </ul>
-            
-               
-        
-<!--TEXTS-->  
-<div class="toocol">
-        <div class = "col1">
-
-<!--WELCOME--> 
-            <h3><em>Welcome...</em></h3>
                 
-            <p>Hello and welcome to 'HAPPY TRAILS - IRELAND', the website that allows you to find walking trails and hiking spots in Ireland. Enjoy exploring the website and leave a comment with your suggestions on our contact page at the end of this <a href="ContactPage.html">site!</a> </p>
-            <a href="MyTrails.html"><img src="img/welcome.PNG" alt="welcome" width=200 height=160></a><br>
-            <p>Happy Hiking!!</p>
-            
-        </div>
 
-    
-<!--FIND A TRAIL-->
-        <div class = "col2">
-             
-            <h3><em>Find a Trail</em></h3> 
-           
-            <p>To view the trails click on any county in the map of Ireland or search for trails using the drop down menu options below.</p>
-            <p>Read more<a href="MyTrails.html"> here!</a></p>
-            <br><br>
-            <a href="MyTrails.html"><img src="img/map-block-bg.png" alt="map" width=200 height=185></a>
-            
+    <main class="main columns">
+        
+  <section class="column main-column">
+      
+    <a class="article first-article" href="#">
+        
+      <figure class="article-image is-4by3">
+        <img src="img/welcome.PNG"alt="">
+      </figure>
+        
+      <div class="article-body">
+        <h2 class="article-title">
+          WELCOME
+        </h2>
+          
+        <p class="article-content">
+          Hello and welcome to 'HAPPY HIKES - IRELAND', the website that allows you to find walking trails and hiking spots in Ireland. Enjoy exploring the website and leave a comment with your suggestions in our contact page at the end of this site!
+        </p>
+          
+        <footer class="article-info">
+          <span>By AMI</span>
+          <span>42 comments</span>
+        </footer>
+          
       </div>
-    
-<!--GALLERY-->       
-    <div class="col2">
-                    <h3><em>Gallery</em></h3>
-              
-                    <ol><li>
-                        <p>Have a peak at some of our users most recent trails <a href="Gallery.html">here!</a>:</p></li>
-                                
-                    <p>or</p>
-                        
-                  <li><p>By pressing the icon below:</p>
-                        </li>
-                        <br><br>
-                <div class="gallery">   
-                    <a href="Gallery.html"><img src="img/galIcon.PNG"alt="Email!" width=130 height=130></a>
-                <br>
-                    </div>
-                        
-                    </ol>
-            </div>
-    
-<!--Bridges-->
-        <div class="col1">
-                <h3><em>Review and Rate Trials</em></h3>
-    
-                <p>If you would like to leave a comment on our website or add suggestions...</p>
-                <p>click <a href="ContactPage.html">here!</a></p>
-            
+        
+    </a>
+
+    <div class="columns">
+      <div class="column nested-column">
+        <a class="article" href="#">
+          <figure class="article-image is-16by9">
+            <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-02.png" alt="">
+          </figure>
+          <div class="article-body">
+            <h2 class="article-title">
+              LATEST
+            </h2>
+            <p class="article-content">
+              €10 Million Allocated to Irish Mountain Bike Trail Initiative
+            </p>
+            <footer class="article-info">
+              <span>By Joe Smith</span>
+              <span>42 comments</span>
+            </footer>
+          </div>
+        </a>
+      </div>
+
+      <div class="column">
+        <a class="article" href="#">
+          <figure class="article-image is-16by9">
+            <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-03.png" alt="">
+          </figure>
+          <div class="article-body">
+            <h2 class="article-title">
+              FIND A TRAIL
+            </h2>
+            <p class="article-content">
+             To view the trails click on any county in the map of Ireland or search for trails using the drop down menu options below.
+            </p>
+            <footer class="article-info">
+              <span>By Outsider</span>
+              <span>1 comments</span>
+            </footer>
+          </div>
+        </a>
+      
+        <a class="article" href="#">
+          <div class="article-body">
+            <h2 class="article-title">
+              WILD ATLANTIC WAY
+            </h2>
+            <p class="article-content">
+              The Wild Atlantic Way is Ireland's first long-distance touring route, stretching along the Atlantic coast from Donegal to West Cork.
+            </p>
+            <footer class="article-info">
+              <span>By Joe Smith</span>
+              <span>42 comments</span>
+            </footer>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="column">
+    <a class="article" href="#">
+      <figure class="article-image is-3by2">
+        <img src="img/hike.PNG" alt="">
+      </figure>
+      <div class="article-body">
+        <h2 class="article-title">
+            Hiking Tips for Beginners: Everything you Need to Know
+        </h2>
+        <p class="article-content">
+          Thinking about taking up hiking? Here’s everything you need to know to get started.
+        </p>
+        <footer class="article-info">
+          <span>By Outsider</span>
+          <span>1 comments</span>
+        </footer>
+      </div>
+    </a>
+   
+    <a class="article" href="#">
+      <div class="article-body">
+        <h2 class="article-title">
+          Sport Ireland Trails
+        </h2>
+        <p class="article-content">
+          <iframe src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FNational-Trails-Office-Ireland%2F169444303072283&amp;width=300&amp;colorscheme=light&amp;show_faces=false&amp;stream=true&amp;header=true&amp;height=450" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:270px; height:500px;" allowtransparency="true"></iframe> 
+        </p>
+        <footer class="article-info">
+          <span>By Sport Ireland Trails</span>
+          <span>42 comments</span>
+        </footer>
+      </div>
+    </a>
+  </section>
+</main>
+
+                
+<!--Footer-->
                
-                <a href="ContactPage.html"><img src="img/contactImage.PNG" alt="bridge icon" width=200 height=185></a>
-            </div>
-    
-    
- <!--ACCESSIBILITY-->   
-        <div class="col1">
-            <h3><em>Customize You Page</em></h3>
-            <br>
-
-            <ul><li><a class="print" href="#" onclick="Javascript:print()">Print Page
-            </a></li><br><br><img src="img/print.PNG" alt="access" width=150 height=130><br><br>
-                            
-            <p>Change Text Size:</p><br>
-            <li class="resize"><a class="largeA fontSize" href="#" rel="fontLarger.css">1</a></li><br>
-            
-            <li class="resize"><a class="medA fontSize" href="#" rel="fontLarge.css">2</a></li><br>
-                
-            <li class="resize"><a class="smallA fontSize" href="#" rel="fontNormal.css">3</a></li></ul>
-            
-        </div>
-        
-       
-
-        <div id="content">
-            <form name="aspnetForm" method="post" action="/" id="aspnetForm">
-
-
-        <div>
-	   <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987">
-        </div>
-            
-                
-        
-      
-                <script type="text/javascript" src="/includes/js/jquery.ad-gallery.pack.js"></script>
-                <link rel="stylesheet" type="text/css" media="all" href="/includes/js/jquery.ad-gallery.css">
-
-                <script type="text/javascript" src="/includes/js/homeInit.js"></script>
-                <script type="text/javascript" src="/includes/js/image-map.js"></script>
-                <a href="img/map-block-bg.png" ></a>
-            </form>
-        </div>
-    
-      
-<!--OTHER LINKS-->
-     <div class="col1">
-                <h3><em>Other Links</em></h3>
-                
-                <div class="homeSection">
-        </div>
-        <iframe src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FNational-Trails-Office-Ireland%2F169444303072283&amp;width=300&amp;colorscheme=light&amp;show_faces=false&amp;stream=true&amp;header=true&amp;height=450" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:270px; height:500px;" allowtransparency="true"></iframe>        
-        </div>
-              
-    </div> 
-        
-            </main>
-           
-<!--FOOTER-->
         <footer>
-        &copy; Copyright 2019 |
-<!--SOCIAL MEDIA LINKS-->
+        &copy; Copyright 2019 |<!--SOCIAL MEDIA LINKS-->
                     <a href="https://www.facebook.com/limerickclimbingclub/"><img src="img/FBIcon.PNG"></a>
                 
                     <a href="https://www.instagram.com/limerick.ie/"><img src="img/InstaIcon.PNG"></a>
                 
                     <a href="https://en.wikipedia.org/wiki/List_of_long-distance_trails_in_the_Republic_of_Ireland"><img src="img/WikiIcon.PNG"></a>
                 
-                    <a href="https://twitter.com/irelandwalking?lang=en"><img src="img/TwiiterIcon.PNG"></a>| AMI
+                    <a href="https://twitter.com/irelandwalking?lang=en"><img src="img/TwiiterIcon.PNG"></a>| Ashley Nic an Airchinnigh
             
             </footer>
-            </div>
-        <!--Internal Top of Page-->
+        
+<!--Internal Top of Page-->
         <a href="#top">Back to top</a>
-    </body>
-</html>
+        
+                
+        </div>
+        </body>
+        </main>
+    </html>

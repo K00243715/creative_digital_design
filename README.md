@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<body>
 #creative_digital_media
 
 
@@ -25,3 +29,7 @@ DESCRIPTION:
 This website is currently under development and we greatly appreciate your patience and understanding during this time.
 
 View live Demo: https://k00243715.github.io/creative_digital_design/
+
+</body>
+</html>
+
