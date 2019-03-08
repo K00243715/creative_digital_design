@@ -44,14 +44,26 @@
   
  
 <!--BODY OF WEBSITE-->
+    <main>
     <body>
         <h2 id="top"></h2> 
+                
+<!--MESSAGE TO USER - BUTTON-->
+         <button onclick="myFunction()">HEY YOU! - PRESS ME FIRST!</button>
+        <script>
+            function myFunction() {
+            alert("Hi - this website is currently undergoing construction. Apologies for any frustration caused - we hope to fully complete everything, ASAP. Thanks for visiting!");
+            }
+        </script>
+        <br>
+        <br>
+        <br>
         <div id="wrapper">
             
 <!--LOGO-->
             <header>
                 
-                <h1>HAPPY TRAILS - IRELAND</h1>
+                <h1>HAPPY HIKES - IRELAND</h1>
                 
                 <a href="index.html">
                     
@@ -60,9 +72,11 @@
                         
                 
 <!--Search Bar-->
+                      <div class="search">
                         <form>
-                            <input type="text" placeholder="Search" name="search" ><button type="submit" ><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Search" name="search"><button type="submit" ><i class="fa fa-search"></i></button>
                             </form>
+                        </div>
                 </header>
             
                               
@@ -72,8 +86,8 @@
         <ul>
             <li ><a href="index.html">Home</a> </li>
             <li> <a href="MyTrails.html"  class="current"> MY TRAILS</a> </li>
+            <li><a href="Articles.html">Articles</a> </li>
             <li><a href="Gallery.html">Gallery</a> </li>
-            <li><a href="Links.html">Links</a> </li>
             <li><a href="ContactPage.html">Contact</a> </li>
         </ul>
     </nav>
@@ -90,8 +104,8 @@
         </div>
     
     <div id="hero">
-            <img src="img/banner2.PNG" alt="banner" ></a>
-        </div>  
+            <img src="img/banner2.PNG" alt="banner" >
+        </div>
 
 <!--QUOTE-->
         <ul>
@@ -107,79 +121,88 @@
         
 <body class="inner">
     
+      
+
+
+
+        
+   
  <div class="homeBottom">
         <div class="centre-col"> 
          <div class="homeSection">
           <h2>FIND A TRAIL</h2>
-                To view the trails click on any county in the map of Ireland:
+          <p class="noTrails">Number of Trails <br><strong>950</strong></p>
                <div class="map-block">
-              <div class="bg">
+  
+            <div class="bg">
            
 	            <div class="map-area">
 						<img height="369" width="277" class="img" src="/img/map-block-bg.png" usemap="#map" alt="">
 						<map name="map" id="map">
-                            
-							<area shape="poly" coords="165,4,147,13,125,22,114,31,108,41,114,49,106,56,95,62,97,72,92,69,108,72,119,73,125,73,121,82,123,87,133,81,149,72,138,69,143,60,148,64,156,57,162,47,166,40,170,30,179,22,190,13,179,9,175,3,166,3" href="https://www.irishtrails.ie/trails.aspx?c=Donegal" alt="Donegal" title="Donegal">
-                            
-							<area shape="poly" coords="234,12,218,11,207,14,195,20,190,18,186,29,173,33,166,41,157,55,148,64,144,61,138,69,149,73,142,80,134,82,126,88,140,103,145,110,153,110,159,116,171,116,179,107,179,99,184,92,189,90,196,97,202,106,208,111,212,122,222,121,230,115,243,122,253,113,254,103,265,102,272,93,273,81,271,73,265,63,253,68,253,60,259,53,253,45,246,36,239,25,238,16" target="_blank" href="https://www.irishtrails.ie/NI_Trails/Northen_Ireland_Trails.html" alt="NorthernIreland" title="Northern Ireland">
-                            
-							<area shape="poly" coords="189,89,179,99,181,105,174,113,172,118,189,120,199,131,206,137,210,132,213,123,206,110,200,102,190,89" href="https://www.irishtrails.ie/trails.aspx?c=Monaghan" alt="Monaghan" title="Monaghan">
-                            
-							<area shape="poly" coords="214,122,208,136,218,148,225,153,235,148,235,139,228,137,227,129,227,125,239,129,238,124,229,117,216,121" href="https://www.irishtrails.ie/trails.aspx?c=Louth" alt="Louth" title="Louth">
-                            
-							<area shape="poly" coords="119,85,100,98,106,100,105,105,104,111,97,106,89,108,80,104,74,116,80,118,84,119,82,127,86,129,91,133,97,129,103,129,104,134,109,136,116,136,118,129,123,125,126,119,118,115,115,106,115,95" href="https://www.irishtrails.ie/trails.aspx?c=Sligo" alt="Sligo" title="Sligo">
-                            
-							<area shape="poly" coords="120,84,115,107,120,116,127,118,132,120,131,133,136,139,142,146,148,144,153,136,158,132,151,122,142,116,133,108,137,101,129,91,121,84" href="https://www.irishtrails.ie/trails.aspx?c=Leitrim" alt="Leitrim" title="Leitrim">
-                            
-							<area shape="poly" coords="138,99,133,109,141,114,153,123,161,138,167,147,178,147,184,148,194,149,195,142,201,139,198,131,192,124,182,119,173,119,163,116,155,115,149,111,142,108,138,100" href="https://www.irishtrails.ie/trails.aspx?c=Cavan" alt="Cavan" title="Cavan">
-                            
-							<area shape="poly" coords="202,136,197,143,192,148,181,148,175,148,180,155,187,158,195,159,194,168,191,176,183,181,186,182,192,182,197,178,201,182,208,184,214,185,220,186,225,183,228,178,229,172,225,167,230,165,234,162,235,155,225,155,218,149,212,141,203,136" href="https://www.irishtrails.ie/trails.aspx?c=Meath" alt="Meath" title="Meath">
-                            
-							<area shape="poly" coords="237,161,226,167,228,173,227,181,222,188,223,196,230,200,237,199,244,194,238,189,243,184,246,184,242,180,241,176,243,172,242,165" href="https://www.irishtrails.ie/trails.aspx?c=Dublin" alt="Dublin" title="Dublin">
-                            
-							<area shape="poly" coords="73,114,67,108,61,102,51,103,39,102,35,106,25,106,22,116,21,122,27,125,30,135,15,133,24,139,38,143,48,143,47,151,32,155,33,166,46,168,58,172,65,175,71,180,80,172,84,164,91,161,100,153,98,146,102,141,98,135,102,131,95,130,89,134,84,129,80,130,81,125,81,120,74,118" href="https://www.irishtrails.ie/trails.aspx?c=Mayo" alt="Mayo" title="Mayo">
-                            
-							<area shape="poly" coords="128,120,122,126,117,133,114,137,108,136,101,133,101,140,99,147,100,151,94,161,99,162,110,159,116,163,122,172,125,192,132,200,142,189,138,175,134,166,143,152,134,138,129,124" href="https://www.irishtrails.ie/trails.aspx?c=Roscommon" alt="Roscommon" title="Roscommon">
-                            
-							<area shape="poly" coords="158,134,150,144,142,146,143,151,134,166,140,173,146,171,156,173,159,163,166,156,171,149,165,145,159,140" href="https://www.irishtrails.ie/trails.aspx?c=Longford" alt="Longford" title="Longford">
-                            
-							<area shape="poly" coords="175,149,167,157,158,164,157,172,151,173,143,173,138,176,141,187,148,191,158,184,162,188,168,193,183,182,190,176,194,164,194,159,184,158,178,154" href="https://www.irishtrails.ie/trails.aspx?c=Westmeath" alt="Westmeath" title="Westmeath">
-                            
-							<area shape="poly" coords="185,181,191,183,197,178,203,184,221,186,221,198,216,211,208,221,210,230,201,233,196,225,191,220,192,212,191,205,195,200,196,192" href="https://www.irishtrails.ie/trails.aspx?c=Kildare" alt="Kildare" title="Kildare">
-                            
-							<area shape="poly" coords="33,166,18,174,22,182,27,189,32,194,40,196,47,202,84,202,81,210,88,220,94,226,106,221,121,225,130,212,135,208,139,205,134,198,130,201,124,192,121,174,117,166,110,160,98,163,93,162,80,173,71,180,63,174" href="https://www.irishtrails.ie/trails.aspx?c=Galway" alt="Galway" title="Galway">
-                            
-							<area shape="poly" coords="142,189,134,198,140,205,135,210,140,212,142,220,137,231,140,236,150,226,155,227,157,219,161,213,157,208,163,207,169,206,174,203,177,209,190,208,195,200,195,192,184,183,169,194,158,186,148,192" href="https://www.irishtrails.ie/trails.aspx?c=Offaly" alt="Offaly" title="Offaly">
-                            
-							<area shape="poly" coords="158,208,171,206,177,209,189,209,191,218,196,225,199,237,193,240,187,233,181,235,174,239,165,240,159,245,154,238,157,229,155,227,158,219,163,214" href="https://www.irishtrails.ie/trails.aspx?c=Laois" alt="Laois" title="Laois">
-                            
-							<area shape="poly" coords="222,192,219,207,209,222,212,228,222,230,222,238,215,237,218,247,223,249,230,243,232,239,244,243,252,223,248,218,249,211,244,195,234,201,226,199" href="https://www.irishtrails.ie/trails.aspx?c=Wicklow" alt="Wicklow" title="Wicklow">
-                            
-							<area shape="poly" coords="80,209,67,211,57,229,62,231,53,248,47,253,30,267,52,259,63,262,74,260,85,244,87,253,100,255,112,249,115,242,116,233,123,225,106,222,95,226,89,227,87,220" href="https://www.irishtrails.ie/trails.aspx?c=Clare" alt="Clare" title="Clare">
-                            
-							<area shape="poly" coords="136,205,123,225,114,247,116,234,115,253,124,253,129,256,129,267,120,271,119,276,129,281,132,292,138,297,144,295,155,296,153,286,163,282,174,284,175,274,171,262,163,253,158,247,156,242,151,239,155,237,156,231,150,227,147,233,142,237,137,232,138,227,141,221,140,216" href="https://www.irishtrails.ie/trails.aspx?c=Tipperary" alt="Tipperary" title="Tipperary">
-                            
-							<area shape="poly" coords="160,247,171,241,185,234,193,240,192,245,195,250,202,259,202,271,200,278,198,287,195,292,190,289,187,292,181,285,177,283,175,272,173,262,168,253" href="https://www.irishtrails.ie/trails.aspx?c=Kilkenny" alt="Kilkenny" title="Kilkenny">
-                            
-							<area shape="poly" coords="211,226,207,232,198,230,199,236,193,240,193,246,200,255,203,271,209,264,210,253,217,253,217,247,213,240,216,236,223,237,221,231" href="https://www.irishtrails.ie/trails.aspx?c=Carlow" alt="Carlow" title="Carlow">
-                            
-							<area shape="poly" coords="232,239,224,249,217,248,217,253,210,254,210,260,202,272,198,287,204,294,204,303,215,294,223,296,234,296,238,291,229,282,235,279,236,273,242,261,241,253,245,244" href="https://www.irishtrails.ie/trails.aspx?c=Wexford" alt="Wexford" title="Wexford">
-                            
-							<area shape="poly" coords="114,247,104,255,87,257,76,261,64,264,66,271,66,282,72,290,78,286,85,289,95,282,102,283,114,292,123,288,130,291,127,280,119,277,119,271,127,265,128,256,117,254" href="https://www.irishtrails.ie/trails.aspx?c=Limerick" alt="Limerick" title="Limerick">
-                            
-							<area shape="poly" coords="59,262,46,265,44,273,31,279,36,291,25,294,11,293,5,301,3,308,12,306,37,304,4,327,7,337,15,334,21,341,48,330,36,340,38,346,51,338,57,337,68,327,68,321,77,317,68,298,72,291,65,283,66,273,64,265" href="https://www.irishtrails.ie/trails.aspx?c=Kerry" alt="Kerry" title="Kerry">
-                            
-							<area shape="poly" coords="86,291,78,287,69,295,76,316,69,323,67,331,50,338,38,346,34,341,22,350,23,356,54,342,58,345,37,360,54,354,38,366,50,364,62,362,71,365,85,358,93,355,101,358,111,350,123,341,133,335,148,328,148,318,140,306,135,299,132,291,123,289,113,292,103,284,95,283" href="https://www.irishtrails.ie/trails.aspx?c=Cork" alt="Cork" title="Cork">
-                            
-							<area shape="poly" coords="154,286,157,294,150,296,137,298,143,309,151,318,163,319,170,306,187,303,199,301,200,290,192,292,186,293,183,289,178,284,165,283" href="https://www.irishtrails.ie/trails.aspx?c=Waterford" title="Waterford" alt="Waterford">
+							<area shape="poly" coords="165,4,147,13,125,22,114,31,108,41,114,49,106,56,95,62,97,72,92,69,108,72,119,73,125,73,121,82,123,87,133,81,149,72,138,69,143,60,148,64,156,57,162,47,166,40,170,30,179,22,190,13,179,9,175,3,166,3" href="/trails.aspx?c=Donegal" alt="Donegal" title="Donegal">
+							<area shape="poly" coords="234,12,218,11,207,14,195,20,190,18,186,29,173,33,166,41,157,55,148,64,144,61,138,69,149,73,142,80,134,82,126,88,140,103,145,110,153,110,159,116,171,116,179,107,179,99,184,92,189,90,196,97,202,106,208,111,212,122,222,121,230,115,243,122,253,113,254,103,265,102,272,93,273,81,271,73,265,63,253,68,253,60,259,53,253,45,246,36,239,25,238,16" target="_blank" href="/NI_Trails/Northen_Ireland_Trails.html" alt="NorthernIreland" title="Northern Ireland">
+							<area shape="poly" coords="189,89,179,99,181,105,174,113,172,118,189,120,199,131,206,137,210,132,213,123,206,110,200,102,190,89" href="/trails.aspx?c=Monaghan" alt="Monaghan" title="Monaghan">
+							<area shape="poly" coords="214,122,208,136,218,148,225,153,235,148,235,139,228,137,227,129,227,125,239,129,238,124,229,117,216,121" href="/trails.aspx?c=Louth" alt="Louth" title="Louth">
+							<area shape="poly" coords="119,85,100,98,106,100,105,105,104,111,97,106,89,108,80,104,74,116,80,118,84,119,82,127,86,129,91,133,97,129,103,129,104,134,109,136,116,136,118,129,123,125,126,119,118,115,115,106,115,95" href="/trails.aspx?c=Sligo" alt="Sligo" title="Sligo">
+							<area shape="poly" coords="120,84,115,107,120,116,127,118,132,120,131,133,136,139,142,146,148,144,153,136,158,132,151,122,142,116,133,108,137,101,129,91,121,84" href="/trails.aspx?c=Leitrim" alt="Leitrim" title="Leitrim">
+							<area shape="poly" coords="138,99,133,109,141,114,153,123,161,138,167,147,178,147,184,148,194,149,195,142,201,139,198,131,192,124,182,119,173,119,163,116,155,115,149,111,142,108,138,100" href="/trails.aspx?c=Cavan" alt="Cavan" title="Cavan">
+							<area shape="poly" coords="202,136,197,143,192,148,181,148,175,148,180,155,187,158,195,159,194,168,191,176,183,181,186,182,192,182,197,178,201,182,208,184,214,185,220,186,225,183,228,178,229,172,225,167,230,165,234,162,235,155,225,155,218,149,212,141,203,136" href="/trails.aspx?c=Meath" alt="Meath" title="Meath">
+							<area shape="poly" coords="237,161,226,167,228,173,227,181,222,188,223,196,230,200,237,199,244,194,238,189,243,184,246,184,242,180,241,176,243,172,242,165" href="/trails.aspx?c=Dublin" alt="Dublin" title="Dublin">
+							<area shape="poly" coords="73,114,67,108,61,102,51,103,39,102,35,106,25,106,22,116,21,122,27,125,30,135,15,133,24,139,38,143,48,143,47,151,32,155,33,166,46,168,58,172,65,175,71,180,80,172,84,164,91,161,100,153,98,146,102,141,98,135,102,131,95,130,89,134,84,129,80,130,81,125,81,120,74,118" href="/trails.aspx?c=Mayo" alt="Mayo" title="Mayo">
+							<area shape="poly" coords="128,120,122,126,117,133,114,137,108,136,101,133,101,140,99,147,100,151,94,161,99,162,110,159,116,163,122,172,125,192,132,200,142,189,138,175,134,166,143,152,134,138,129,124" href="/trails.aspx?c=Roscommon" alt="Roscommon" title="Roscommon">
+							<area shape="poly" coords="158,134,150,144,142,146,143,151,134,166,140,173,146,171,156,173,159,163,166,156,171,149,165,145,159,140" href="/trails.aspx?c=Longford" alt="Longford" title="Longford">
+							<area shape="poly" coords="175,149,167,157,158,164,157,172,151,173,143,173,138,176,141,187,148,191,158,184,162,188,168,193,183,182,190,176,194,164,194,159,184,158,178,154" href="/trails.aspx?c=Westmeath" alt="Westmeath" title="Westmeath">
+							<area shape="poly" coords="185,181,191,183,197,178,203,184,221,186,221,198,216,211,208,221,210,230,201,233,196,225,191,220,192,212,191,205,195,200,196,192" href="/trails.aspx?c=Kildare" alt="Kildare" title="Kildare">
+							<area shape="poly" coords="33,166,18,174,22,182,27,189,32,194,40,196,47,202,84,202,81,210,88,220,94,226,106,221,121,225,130,212,135,208,139,205,134,198,130,201,124,192,121,174,117,166,110,160,98,163,93,162,80,173,71,180,63,174" href="/trails.aspx?c=Galway" alt="Galway" title="Galway">
+							<area shape="poly" coords="142,189,134,198,140,205,135,210,140,212,142,220,137,231,140,236,150,226,155,227,157,219,161,213,157,208,163,207,169,206,174,203,177,209,190,208,195,200,195,192,184,183,169,194,158,186,148,192" href="/trails.aspx?c=Offaly" alt="Offaly" title="Offaly">
+							<area shape="poly" coords="158,208,171,206,177,209,189,209,191,218,196,225,199,237,193,240,187,233,181,235,174,239,165,240,159,245,154,238,157,229,155,227,158,219,163,214" href="/trails.aspx?c=Laois" alt="Laois" title="Laois">
+							<area shape="poly" coords="222,192,219,207,209,222,212,228,222,230,222,238,215,237,218,247,223,249,230,243,232,239,244,243,252,223,248,218,249,211,244,195,234,201,226,199" href="/trails.aspx?c=Wicklow" alt="Wicklow" title="Wicklow">
+							<area shape="poly" coords="80,209,67,211,57,229,62,231,53,248,47,253,30,267,52,259,63,262,74,260,85,244,87,253,100,255,112,249,115,242,116,233,123,225,106,222,95,226,89,227,87,220" href="/trails.aspx?c=Clare" alt="Clare" title="Clare">
+							<area shape="poly" coords="136,205,123,225,114,247,116,234,115,253,124,253,129,256,129,267,120,271,119,276,129,281,132,292,138,297,144,295,155,296,153,286,163,282,174,284,175,274,171,262,163,253,158,247,156,242,151,239,155,237,156,231,150,227,147,233,142,237,137,232,138,227,141,221,140,216" href="/trails.aspx?c=Tipperary" alt="Tipperary" title="Tipperary">
+							<area shape="poly" coords="160,247,171,241,185,234,193,240,192,245,195,250,202,259,202,271,200,278,198,287,195,292,190,289,187,292,181,285,177,283,175,272,173,262,168,253" href="/trails.aspx?c=Kilkenny" alt="Kilkenny" title="Kilkenny">
+							<area shape="poly" coords="211,226,207,232,198,230,199,236,193,240,193,246,200,255,203,271,209,264,210,253,217,253,217,247,213,240,216,236,223,237,221,231" href="/trails.aspx?c=Carlow" alt="Carlow" title="Carlow">
+							<area shape="poly" coords="232,239,224,249,217,248,217,253,210,254,210,260,202,272,198,287,204,294,204,303,215,294,223,296,234,296,238,291,229,282,235,279,236,273,242,261,241,253,245,244" href="/trails.aspx?c=Wexford" alt="Wexford" title="Wexford">
+							<area shape="poly" coords="114,247,104,255,87,257,76,261,64,264,66,271,66,282,72,290,78,286,85,289,95,282,102,283,114,292,123,288,130,291,127,280,119,277,119,271,127,265,128,256,117,254" href="/trails.aspx?c=Limerick" alt="Limerick" title="Limerick">
+							<area shape="poly" coords="59,262,46,265,44,273,31,279,36,291,25,294,11,293,5,301,3,308,12,306,37,304,4,327,7,337,15,334,21,341,48,330,36,340,38,346,51,338,57,337,68,327,68,321,77,317,68,298,72,291,65,283,66,273,64,265" href="/trails.aspx?c=Kerry" alt="Kerry" title="Kerry">
+							<area shape="poly" coords="86,291,78,287,69,295,76,316,69,323,67,331,50,338,38,346,34,341,22,350,23,356,54,342,58,345,37,360,54,354,38,366,50,364,62,362,71,365,85,358,93,355,101,358,111,350,123,341,133,335,148,328,148,318,140,306,135,299,132,291,123,289,113,292,103,284,95,283" href="/trails.aspx?c=Cork" alt="Cork" title="Cork">
+							<area shape="poly" coords="154,286,157,294,150,296,137,298,143,309,151,318,163,319,170,306,187,303,199,301,200,290,192,292,186,293,183,289,178,284,165,283" href="/trails.aspx?c=Waterford" title="Waterford" alt="Waterford">
 						</map>
+						<ul id="map-hover">
+							<li class="   " id="Donegal"><img src="/images/area1.png" alt="Donegal" title="Donegal"></li>
+							<li class="   " id="NorthernIreland"><img src="/images/area2.png" alt="Northern Ireland" title="Northern Ireland"></li>
+							<li id="Monaghan" class=" "><img src="/images/area3.png" alt="Monaghan" title="Monaghan"></li>
+							<li id="Louth" class=" "><img src="/images/area4.png" alt="Louth" title="Louth"></li>
+							<li class="" id="Sligo"><img src="/images/area5.png" alt="Sligo" title="Sligo"></li>
+							<li class="" id="Leitrim"><img src="/images/area6.png" alt="Leitrim" title="Leitrim"></li>
+							<li class="" id="Cavan"><img src="/images/area7.png" alt="Cavan" title="Cavan"></li>
+							<li class=" " id="Meath"><img src="/images/area8.png" alt="Meath" title="Meath"></li>
+							<li id="Dublin"><img src="/images/area9.png" alt="Dublin" title="Dublin"></li>
+							<li class=" " id="Mayo"><img src="/images/area10.png" alt="Mayo" title="Mayo"></li>
+							<li class="" id="Roscommon"><img src="/images/area11.png" alt="Roscommon" title="Roscommon"></li>
+							<li class="" id="Longford"><img src="/images/area12.png" alt="Longford" title="Longford"></li>
+							<li class="" id="Westmeath"><img src="/images/area13.png" alt="Westmeath" title="Westmeath"></li>
+							<li class="  " id="Kildare"><img src="/images/area14.png" alt="Kildare" title="Kildare"></li>
+							<li class=" " id="Galway"><img src="/images/area15.png" alt="Galway" title="Galway"></li>
+							<li class="" id="Offaly"><img src="/images/area16.png" alt="Offaly" title="Offaly"></li>
+							<li class=" " id="Laois"><img src="/images/area17.png" alt="Laois" title="Laois"></li>
+							<li class="" id="Wicklow"><img src="/images/area18.png" alt="Wicklow" title="Wicklow"></li>
+							<li class="" id="Clare"><img src="/images/area19.png" alt="Clare" title="Clare"></li>
+							<li class="" id="Tipperary"><img src="/images/area20.png" alt="Tipperary" title="Tipperary"></li>
+							<li class=" " id="Kilkenny"><img src="/images/area21.png" alt="Kilkenny" title="Kilkenny"></li>
+							<li class="" id="Carlow"><img src="/images/area22.png" alt="Carlow" title="Carlow"></li>
+							<li id="Wexford"><img src="/images/area23.png" alt="Wexford" title="Wexford"></li>
+							<li class=" " id="Limerick"><img src="/images/area24.png" alt="Limerick" title="Limerick"></li>
+							<li class=" " id="Kerry"><img src="/images/area25.png" alt="Kerry" title="Kerry"></li>
+							<li class="  " id="Cork"><img src="/images/area26.png" alt="Cork" title="Cork"></li>
+							<li id="Waterford" class=" "><img src="/images/area27.png" alt="Waterford" title="Waterford"></li>
+						</ul>
 					</div>	        
             </div>
           
              
-              <h2>
-Search for trails using the drop down menu options below:
-                </h2>
+              <p>
+To view the trails click on any county in the map of Ireland or search for trails using the drop down menu options below.
+                </p>
              
               <div class="searchOptions">
                 <p>
@@ -273,9 +296,9 @@ Search for trails using the drop down menu options below:
 
 
 
-<div class="ad-preloads"></div>
+<div class="ad-preloads"></div></body></html>
     </div>
-           
+            </div>
     
     
 
@@ -283,7 +306,7 @@ Search for trails using the drop down menu options below:
             
            
 <!--Footer-->
-        <footer>
+     <footer>
         &copy; Copyright 2019 |<!--SOCIAL MEDIA LINKS-->
                     <a href="https://www.facebook.com/limerickclimbingclub/"><img src="img/FBIcon.PNG"></a>
                 
@@ -291,13 +314,13 @@ Search for trails using the drop down menu options below:
                 
                     <a href="https://en.wikipedia.org/wiki/List_of_long-distance_trails_in_the_Republic_of_Ireland"><img src="img/WikiIcon.PNG"></a>
                 
-                    <a href="https://twitter.com/irelandwalking?lang=en"><img src="img/TwiiterIcon.PNG"></a>| AMI
+                    <a href="https://twitter.com/irelandwalking?lang=en"><img src="img/TwiiterIcon.PNG"></a>| Ashley Nic an Airchinnigh
             
             </footer>
         
 <!--Internal Top of Page-->
         <a href="#top">Back to top</a>
         </div>
-        </div>
     </body>
+    </main>
 </html>
