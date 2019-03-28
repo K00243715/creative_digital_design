@@ -81,7 +81,8 @@ p::first-letter {
 /*          Main NAV STYLES                   */
 /*****************************************/
 
-        nav {background-color:black;
+        nav {
+            background-color:black;
             height: 43px;
             text-align: center;
             }
