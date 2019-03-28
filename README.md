@@ -1,4 +1,4 @@
-
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en"> 
 
@@ -34,3 +34,4 @@ View live Demo: https://k00243715.github.io/creative_digital_design/
 </body>
 </html>
 
+=======

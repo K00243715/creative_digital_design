@@ -1,21 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-    //background-image: url(../img/contourLines.png);
     background-image: url(../img/background.jpg);
     font-family: sans-serif;
     font-size: 14px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: 10px;
+    background-position: center 100%;
 }
 
-#wrapper{
-    width:1200px;
+body {
+  background-image: url(../img/background.jpg);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
     background-color:lightgray;
     margin-left:auto;
     margin-right:auto;
-        }
+    
+}
+
 
 header{
     background-color:#000000;
     height:107px;
-    }
+}
 
 header h1{
     color:#FFDB58;
@@ -27,21 +50,51 @@ header h1{
     vertical-align: middle;
     color:#ADFF2F; 
     float: right;
+}
 
-    }
+h1{
+    align-content: center;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+}
 
 h2{
     text-align: center;
-    background-color:greenyellow;
+    background-color:forestgreen;
     color:black;
     padding:25px;
-    
-    }
+}
+
+h3{
+    text-align: center;
+    color: #FFDB58;
+    background-color:black;
+    padding:15px;  
+}
+
+h4{
+    text-align: center;
+    background-color:black;
+    color:dodgerblue;
+    padding:25px; 
+}
 
 p::first-letter {
-     color:forestgreen;
+    color:dodgerblue;
     font-size: 300%;
-           }
+}
+
+ul{
+    text-align: center;
+}
+
+ body .responsive {
+     width: 100%;
+     height: auto;
+}
+
+
 
         
 /*****************************************/
@@ -49,7 +102,7 @@ p::first-letter {
 /*****************************************/
 
         nav {background-color:black;
-            height: 43px;
+            height: 65px;
             text-align: center;
             }
                 
@@ -69,6 +122,7 @@ p::first-letter {
             text-decoration: none;
             color: yellow;
             font-weight: 900;
+            
             }
 
         nav a:hover {
@@ -88,20 +142,58 @@ p::first-letter {
             }  
                         
         nav a {
-            font-family: Arial;
+            font-family: sans-serif;
             font-weight: bold;
             font-size: 1.2em;
             }
-        
-        search {
-            float:left;
-            width:3%;
-            margin-top:px;
-            }
 
-        search button {
-          
-            }
+/*****************************************/
+/*          Sub NAV STYLES                   */
+/*****************************************/
+
+.subnav {
+  //display: flex
+  overflow: hidden;
+}
+
+//.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  align-content: center;
+  background-color: black;
+  width: auto;
+  z-index: 1;
+    text-align: center;
+}
+
+.subnav-content a {
+  float: center;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+        
+     
 
 
 /***************************/
@@ -117,14 +209,19 @@ div#hero {
     text-align: center;
     }
 
-div#hero img {
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+//div#hero img {
     width: 1000%;
     max-width:1000px;
     height: auto;
     border:0px;
     }
 
-ul{
+ol{
     text-align: center;
 }
 
@@ -146,7 +243,12 @@ div, h2, p, figure {
   margin: 0 auto;
   max-width: 1040px;
   padding: 20px;
+    
 }
+
+/*****************************************/
+/*          COLUMNS STYLES                */
+/*****************************************/
 
 .columns {
   display: flex;
@@ -159,21 +261,25 @@ div, h2, p, figure {
 }
 
 .main-column {
-  flex: 3;
+  flex: 5;
 }
 
 .nested-column {
-  flex: 2;
+  flex: 1;
 }
+
+/*****************************************/
+/*          ARTICLE STYLES                */
+/*****************************************/
 
 .article {
   background: white;
   color: #666;
   display: flex;
-  flex: 1;
+  flex: 5;
   flex-direction: column;
   flex-basis: auto;
-  margin: 10px;
+  margin: 20px;
 }
 
 .article-image {
@@ -190,7 +296,7 @@ div, h2, p, figure {
   left: 0;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 100%
 }
 
 .article-image.is-3by2 {
@@ -207,6 +313,11 @@ div, h2, p, figure {
   flex-direction: column;
   padding: 20px;
     line-height: 30px;
+}
+
+//.article-body a {
+  display: inline;
+
 }
 
 .article-title {
@@ -239,24 +350,195 @@ div, h2, p, figure {
 }
 
 .first-article .article-image {
-  height: 300px;
+  height: 460px;
   order: 2;
   padding-top: 0;
   width: 400px;
 }
 
+/*****************************************/
+/*          CONTAINER STYLES                */
+/*****************************************/
+.container{
+    background: white;
+    color: #666;
+    display: flex;
+    flex: 1;
+    flex-direction: container;
+    flex-basis: auto;
+    margin: 10px;   
+}
+
+.container-body a {
+  display: inline;
+
+}
+
+
+
+
 fieldset{
     text-align-last: center;
 }
 
+
+
+
+
+/***************************************/
+/*Photo Gallery                        */
+/***************************************/
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 /*****************************************/
 /*          FOOTER STYLES                */
 /*****************************************/
-        footer{
-            background-color:#000000;
-            padding:20px;
-            text-align: center;
-            color:#ffdb58;
-            height:63px;
-            clear:both;
-            }  
+
+#footer{
+    background-color:#000000;
+    display: table;
+    text-align: center;
+    margin-bottom: auto;
+    //margin-left: auto;
+    //margin-right: auto;
+    padding: 40px;
+    font-size: 15px;
+    color:#ADFF2F; 
+    width: 100%;
+}

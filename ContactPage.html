@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"> 
-
+ 
     <head> 
 	    <meta charset="utf-8">
 	    <title> Assignment 1 - Responsive Design - 50% - CMP - EWT</title>
@@ -10,6 +10,14 @@
                 
         <!--tab favicon-->
         <link rel="icon" href="img/favicon.PNG">
+        
+        <!--W3Schools Search Icon Info-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--Set's the viewport of the page - gives the browser instructions on how to control the page's dimensions and scaling.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
 
         </head>
@@ -23,7 +31,7 @@
 
 <!--BODY OF WEBSITE-->
     <main>
-<body>
+        <body class = "responsive">
         <h2 id="top"></h2>
             
 <!--MESSAGE TO USER - BUTTON-->
@@ -36,7 +44,7 @@
         <br>
         <br>
         <br>
-        <div id="wrapper">
+        <div class="wrapper">
             
 <!--LOGO-->
             <header>
@@ -45,7 +53,7 @@
                               
                 <a href="index.html">
                     
-                <img src="img/favicon.PNG" alt="favicon" width="15.8%" height="77%">
+                <img src="img/favicon.PNG" alt="favicon" width="16.2%"  height="77%">
                 <link rel="icon"></a>
                 
               
@@ -53,44 +61,65 @@
                 
 <!--Search Bar-->
                 <div class="search">
-                        <form>
                             <input type="text" placeholder="Search" name="search"><button type="submit" ><i class="fa fa-search"></i></button>
-                            </form>
+
                         </div>
                 
                 </header>
                 
                 
-  <!--Nav Bar-->                           
-        <nav>
+<!--Nav Bar-->                 
+  <!--Nav Bar-->
+        <nav class="navbar">
+            <div class="subnav">
             <ul>
+
                 <li ><a href="index.html">Home</a> </li>
                 <li ><a href="MyTrails.html">MyTrails</a> </li>
-                <li><a href="Articles.html">Articles</a> </li>
+                <li><a href="AllArticles.html" class="subnavbtn">All Articles<i class="fa fa-caret-down"></i></a></li>
+
+                    <div class="subnav-content">
+                    <a href="Article1.html">Article 1</a>
+                    <a href="Article2.html">Article 2 </a>
+                    <a href="Article3.html">Article 3 </a>
+                    <a href="Article4.html">Article 4 </a>
+                    <a href="Article5.html">Article 5 </a>
+                    <a href="Article6.html">Article 6 </a>
+                    </div>
+                
                 <li><a href="Gallery.html">Gallery</a> </li>
                 <li> <a href="ContactPage.html" class="currentpage"> CONTACT</a> </li>
+ 
             </ul>
+            </div>
         </nav>
+            
+            <br>
+      
                 
     
 <!--<main>-->   
 <!--Main Pic-->  
         <div id="pagetitle">
-            <h2>Contact</h2>    
+            <h1>Contact</h1>    
             </div>
+            
+        
+            <br>
+            
         <div id="hero">
-        <img src="img/contact.PNG"  alt="barrbday" style="width:1000px; height:400px;"></a>   
+        <img src="img/contact.PNG"  alt="contact" style="width:1000px; height:400px;"></a>   
             </div>
   
             
  <!--QUOTE-->   
-        <ul>
+        <ol>
             <em><strong>“You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.” -Walt Disney </strong></em><br><br>
-            </ul>
+            </ol>
            
             
-        <div style="background-color:greenyellow;color:black;padding:20px;">      
-            <h2>GET IN TOUCH!</h2>
+        <div>     
+            <h2 style="background-color: greenyellow;" >GET IN TOUCH!</h2>
            </div>
         <br><br>
       
@@ -132,7 +161,7 @@
             <br>
             
  <!--Footer-->       
-   <footer>
+   <div id = "footer">>
         &copy; Copyright 2019 |<!--SOCIAL MEDIA LINKS-->
                     <a href="https://www.facebook.com/limerickclimbingclub/"><img src="img/FBIcon.PNG"></a>
                 
@@ -142,7 +171,7 @@
                 
                     <a href="https://twitter.com/irelandwalking?lang=en"><img src="img/TwiiterIcon.PNG"></a>| Ashley Nic an Airchinnigh
             
-            </footer>
+            </div>
         
 <!--Internal Top of Page-->
         <a href="#top">Back to top</a>               
