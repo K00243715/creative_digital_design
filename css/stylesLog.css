@@ -1,0 +1,116 @@
+* {
+  font-family: 'Monda', sans-serif;
+}
+html { 
+  background: url("https://images.wallpaperscraft.com/image/forest_trees_fog_110131_1920x1080.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.form {
+  margin: 250px auto;
+  width: 400px;
+  padding: 3em;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 1em;
+}
+.form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  width: 90px;
+  text-align: left;
+}
+input {
+  font-size: 1em;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid rgb(204, 204, 204);
+}
+input::placeholder {
+  color: rgb(204, 204, 204);
+}
+input:focus {
+  border-color: #000;
+}
+button {
+  width: 100px;
+  height: 40px;
+  margin-top: 40px;
+  position: relative;
+	display: inline-block;
+    background-color: green;
+  border: none;
+  color: white;
+  font-weight: 100;
+  transition: .5s;
+}
+button::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: 50%;
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+button:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
+#change {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 80px;
+  transition: .5s;
+}
+#change:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
+#logbtn {
+  margin-left: 80px;
+}
+#regbtn {
+  margin-left: 40px;
+}
+#register {
+  font-size: 01rem;
+  width: 250px;
+  margin-left: 80px;
+}
+.required {
+  background: rgb(235, 233, 160);
+}
+.errormsg {
+  text-align: center;
+}
+p {
+  font-weight: bold;
+  color: rgb(131, 0, 0);
+  margin-top: 20px;
+}
+.txt {
+  margin-left: 100px;
+  font-size: 0.8rem;
+  color: black;
+  display: inline-block;
+}
+a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: .5s;
+}
+a:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
