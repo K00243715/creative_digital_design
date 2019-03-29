@@ -29,7 +29,7 @@ DESCRIPTION:
 
 This website is currently under development and we greatly appreciate your patience and understanding during this time.
 
-View live Demo: file:///C:/Users/k00243715/Desktop/27-03-CONT-SEO-localroot-news-structure/newSite/creative_digital_design/login.html
+View live Demo: https://k00243715.github.io/creative_digital_design/.
 
 </body>
 </html>
