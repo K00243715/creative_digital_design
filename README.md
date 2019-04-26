@@ -10,7 +10,7 @@ Name of website: 'Happy Trails'
 
 TYPE:       Hiking Website
 
-ASSIGNMENT: SEO Project (30%)
+ASSIGNMENT: Responsive Website (55%)
 
 MODULE:     E.W.T..
 
